@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁範例</title>
+
+    <!-- 引入 Bootstrap 4.5.2 的 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 引入 Bootstrap 4.5.2 的 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 自定義 CSS -->
+    <style>
+        /* Banner 區塊 */
+        .banner-div {
+            height: 100vh; /* 高度設為視窗高度 */
+            background-color: #ff5733; /* 背景顏色 */
+            color: #fff; /* 文字顏色 */
+            text-align: center; /* 文字置中 */
+            display: flex; /* 使用彈性佈局 */
+            flex-direction: column; /* 垂直排列元素 */
+            justify-content: center; /* 垂直置中 */
+        }
+
+        /* Content 區塊 */
+        .content-div {
+            padding: 2rem; /* 內容與邊框的距離 */
+            min-height: calc(200vh - 8rem); /* 最小高度為200%視窗高度減去8rem */
+        }
+
+        /* Content padding */
+        .content-padding {
+            padding: 0 2rem; /* 左右與邊框的間距 */
+        }
+
+        /* Section 背景 */
+        .section-bg {
+            background-color: #f0f0f0; /* 背景顏色 */
+        }
+
+        /* Content 背景 */
+        .content-div {
+            background-color: #dcdcdc; /* 背景顏色 */
+            padding: 1rem; /* 內容與邊框的間距 */
+            border-radius: 5px; /* 添加圓角 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner 區塊 -->
+    <div class="container-fluid bg-info text-center py-5">
+        <h1>這裡是Banner</h1>
+    </div>
+
+    <!-- 導航欄區塊 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">首頁</a>
+
+        <!-- 按鈕區塊 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 折疊區塊 -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">區段1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">區段2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">區段3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 區段1 -->
+    <section id="section1" class="py-5">
+        <div class="banner-div">
+            <h2>區段1 Banner</h2>
+        </div>
+        <div class="content-div section-bg"> <!-- 修改這裡的類別 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 content-padding">
+                        <h3>區段1 內容</h3>
+                        <p>這是區段1的內容。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                        <p>Quisque vel quam nec massa dictum varius ac eu urna. Suspendisse ut tristique ex.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 區段2 -->
+    <section id="section2" class="py-5">
+        <div class="banner-div">
+            <h2>區段2 Banner</h2>
+        </div>
+        <div class="content-div section-bg"> <!-- 修改這裡的類別 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 content-padding">
+                        <h3>區段2 內容</h3>
+                        <p>這是區段2的內容。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                        <p>Quisque vel quam nec massa dictum varius ac eu urna. Suspendisse ut tristique ex.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 區段3 -->
+    <section id="section3" class="py-5">
+        <div class="banner-div">
+            <h2>區段3 Banner</h2>
+        </div>
+        <div class="content-div section-bg"> <!-- 修改這裡的類別 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 content-padding">
+                        <h3>區段3 內容</h3>
+                        <p>這是區段3的內容。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero nec dolor luctus bibendum.</p>
+                        <p>Quisque vel quam nec massa dictum varius ac eu urna. Suspendisse ut tristique ex.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 引入 jQuery 3.5.1 slim -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- 引入 Popper.js 2.5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- 空白的 script 區塊 -->
+    <script src="script.js">
+        // 此處可以添加 JavaScript 程式碼
+    </script>
+
+</body>
+</html>
