@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.cover {
+    background-image: url('https://jl2424.github.io/pictures/as3%20pic1.jpg'); /* 替換為你的背景圖網址 */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover-content h1 {
+    color: white;
+    font-size: 5rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner {
+    position: -webkit-sticky; /* 適用於Safari */
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.country {
+    height: 300vh; /* 每個國家佔滿視窗高度 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 背景固定效果 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 增加文字的可讀性 */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300vh; /* 調整高度以允許更多內容滾動 */
+}
+
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 30%; /* 左邊區域佔用 50% 寬度 */
+    padding: 20px;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 70%; /* 右邊區域佔用 50% 寬度 */
+    padding: 20px;
+}
+
+.country h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.country p {
+    font-size: 1.5rem;
+    width: 90%; /* 控制右邊段落寬度 */
+    margin-bottom: 20px;
+    text-align: left; /* 讓文字靠左對齊 */
+}
