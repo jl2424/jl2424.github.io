@@ -63,7 +63,6 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 30%; /* 左邊區域佔用 50% 寬度 */
     padding: 20px;
 }
 
@@ -72,7 +71,6 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 70%; /* 右邊區域佔用 50% 寬度 */
     padding: 20px;
 }
 
@@ -87,4 +85,21 @@ body, html {
     width: 90%; /* 控制右邊段落寬度 */
     margin-bottom: 20px;
     text-align: left; /* 讓文字靠左對齊 */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.ending-page {
+    height: 100vh; /* 使背景佔滿整個視窗高度 */
+    background-size: cover; /* 讓背景圖片覆蓋整個區域 */
+    background-position: center; /* 背景圖片居中顯示 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    color: white; /* 文字顏色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影提升可讀性 */
+}
+
+.ending-page h1 {
+    font-size: 4rem; /* 文字大小，可根據需要調整 */
 }
